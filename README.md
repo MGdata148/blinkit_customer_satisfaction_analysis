@@ -13,20 +13,20 @@ The objective of this project is to analyze customer feedback on shopping and de
    - `feedback_id`
    - `order_id`
    - `customer_id`
-   - `rating`
+   - `rating` - from 1 to 5
    - `feedback_text`
-   - `feedback_category`
-   - `sentiment`
+   - `feedback_category` - one of the following: 'App Experience', 'Customer Service', 'Delivery', 'Product Quality'
+   - `sentiment` - 'Positive', 'Neutral' or 'Negative' based on feedback text
    - `feedback_date`
 
 2. `blinkit_delivery_performance` containing:
    - `order_id`
    - `delivery_partner_id`
-   - `promised_time`
-   - `actual_time`
-   - `delivery_time_minutes`
+   - `promised_time` - estimated delivery time
+   - `actual_time` - actual delivery time
+   - `delivery_time_minutes` - the difference between promised time and actual time in minutes
    - `distance_km`
-   - `delivery_status`
+   - `delivery_status` - 'On Time', 'Slightly Delayed' or 'Significantly Delayed'
    - `reasons_if_delayed`
 
 3. `blinkit_order_items` containing:
@@ -41,16 +41,18 @@ The objective of this project is to analyze customer feedback on shopping and de
    - `category`
    - `brand`
    - `price`
-   - `mrp`
-   - `margin_percentage`
-   - `shelf_life_days`
-   - `min_stock_level`
-   - `max_stock_level`
+   - `mrp` - maximum retail price, the highest price at which a product can be sold to the end consumer
+   - `margin_percentage` - a profit margin, profit stated as a percentage of revenue
+   - `shelf_life_days` - the length of time a product can be stored without becoming unsuitable for sale
+   - `min_stock_level` - the lower quantity limit of a product to avoid understocking
+   - `max_stock_level` - the upper quantity limit of a product to avoid overstocking
 
-Research questions
-How have foodborne disease outbreaks evolved over time?
-Which foods and locations pose the highest risk for foodborne disease contamination?
-Which pathogens present the greatest threat to public health?
+### Research questions
+What are the most common types of feedback from Blinkit customers?
+What are the ratings and sentiment trends for each feedback category? How have they evolved over time?
+Does delivery feedback depend on the difference between the promised and actual delivery time?
+Which products are the worst-rated and could be replaced?
+
 Data analysis and visualisation
 Data was analyzed using PostgreSQL and visualised in Tableau.
 
