@@ -48,17 +48,20 @@ The objective of this project is to analyze customer feedback on shopping and de
    - `max_stock_level` - the upper quantity limit of a product to avoid overstocking
 
 ### Research questions
-What are the most common types of feedback from Blinkit customers?
-What are the ratings and sentiment trends for each feedback category? How have they evolved over time?
-Does delivery feedback depend on the difference between the promised and actual delivery time?
-Which products are the worst-rated and could be replaced?
+1. What are the most common types of feedback from Blinkit customers?
+2. What are the ratings and sentiment trends for each feedback category? How have they evolved over time?
+3. Does delivery feedback depend on the difference between the promised and actual delivery time?
+4. Which products are the worst-rated and could be replaced?
 
-Data analysis and visualisation
-Data was analyzed using PostgreSQL and visualised in Tableau.
+### Data analysis and visualisation
+Data was analyzed using [MS Excel](https://www.microsoft.com/pl-pl/microsoft-365/excel) with Power Query and Power Pivot. Power Query was used to import data, remove duplicates and unnecessary columns, assess data quality, and modify data types. Power Pivot was used to build a model for creating combined pivot tables.
 
-Data cleaning and analysis
-Results
-Visualisation
+### Results
+Results are available HERE.
+1. Sheets: 'customer_feedback', 'delivery_performance', 'order_items', 'products' show cleaned tables corresponding to the original data.
+2. 'feedback_by_category' displays feedback text (a categorical variable) divided by sentiment and category. This analysis revealed an issue with feedback classification, as the same text appears in multiple categories, which is not logical. Based on the available data, it is unclear whether the problem stems from the text itself or the classification process. A category-focused approach was chosen for learning purposes.
+
+
 Conclusions
 Foodborne disease outbreaks occured more frequently and had higher rates of hospitalizations and fatalities from April to June, which can be related to warm temperatures favoring the growth of microorganisms.
 Both number of reported foodborne disease outbreaks and total number of cases showed a tendency to decrease over the years, what may indicate raising awareness and improvement in food supply chain.
