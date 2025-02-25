@@ -59,14 +59,12 @@ Data was analyzed using [MS Excel](https://www.microsoft.com/pl-pl/microsoft-365
 ### Results
 Results are available HERE.
 1. Sheets: 'customer_feedback', 'delivery_performance', 'order_items', 'products' show cleaned tables corresponding to the original data.
-2. 'feedback_by_category' displays feedback text (a categorical variable) divided by sentiment and category. This analysis revealed an issue with feedback classification, as the same text appears in multiple categories, which is not logical. Based on the available data, it is unclear whether the problem stems from the text itself or the classification process. A category-focused approach was chosen for learning purposes.
+2. 'feedback_by_category' displays feedback text (a categorical variable) divided by sentiment and category. This analysis revealed an issue with feedback classification, as the same text appears in multiple categories, which is not logical. Based on the available data, it is unclear whether the problem stems from the text itself or the classification process. A category-focused approach was chosen for learning purposes. (answer to question 1)
+3. 'customer_exp_by_category' focuses on rating and feedback sentiment proportion changes by category offering interactive charts with timeline to examine trends in time. (answer to question 2)
+4. 'customer_exp_by_delivery_time' investigates ratings and feedback sentiment in category 'Delivery' depending on the difference between promised and actual delivery time. (answer to question 3)
+5. 'customer_exp_by_product' identifies products with the lowest ratings in 'Product Quality' category and provides an interactive chart to compare problematic products with similar ones from other brands. Both rating and price are included to help find a better-quality product at a similar price.  
 
-
-Conclusions
-Foodborne disease outbreaks occured more frequently and had higher rates of hospitalizations and fatalities from April to June, which can be related to warm temperatures favoring the growth of microorganisms.
-Both number of reported foodborne disease outbreaks and total number of cases showed a tendency to decrease over the years, what may indicate raising awareness and improvement in food supply chain.
-Meat, fish and seafood, and vegetables were food categories most frequently causing foodborne diseases, respectively. This probably results from their high consumption rates combined with short shelf life and susceptibility to the development of microorganisms.
-The type of meat responsible for the most of registered foodborne diseases was poultry, which is a common source of dangerous bacteria, e.g. Salmonella, Campylobacter.
-Restaurants were the most common location for foodborne disease outbreaks, however the average number of cases was much higher in public utility facilities, where many people eat the same meals. The most dangerous foodborne disease outbreaks took place at assisted livig facilities and hospitals probably due to comorbid conditions of patients. Private homes and farms also showed high rates of hospitalizations and fatalities, which may be due to lack of compliance with food storage standards.
-Foodbore disease outbreaks were most commonly caused by viruses and bacteria with Norovirus, Salmonella, and Clostridium occuring the most frequently.
-The deadliest cause of foodborne disease outbreakes was Listeria monocytogenes, which is known for its high mortality rate of up to 30%.
+### Conclusions
+All categories have similar ratings and feedback sentiment proportions. In the case of 'App Experience' and 'Customer Service,' the examined parameters slightly improved over time, while 'Delivery' and 'Product Quality' ratings gradually declined. However, these changes do not appear significant enough to raise concern.
+The given data does not provide any information for analyzing app experience and customer service, so the focus must be on delivery and product quality. The analysis revealed no clear relationship between delivery time and customer satisfaction, which could indicate other delivery-related issues, such as product damage during transit or order mistakes. However, a more likely explanation is poor data quality - inconsistent feedback text and classification.
+The analysis successfully identified low-quality products and provided a tool for quickly comparing and deciding on product replacements.
