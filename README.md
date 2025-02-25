@@ -57,12 +57,12 @@ The objective of this project is to analyze customer feedback on shopping and de
 Data was analyzed using [MS Excel](https://www.microsoft.com/pl-pl/microsoft-365/excel) with Power Query and Power Pivot. Power Query was used to import data, remove duplicates and unnecessary columns, assess data quality, and modify data types. Power Pivot was used to build a model for creating combined pivot tables.
 
 ### Results
-Results are available HERE.
+Results are available [HERE](https://github.com/MGdata148/blinkit_customer_satisfaction_analysis/blob/main/Blinkit%20Customer%20Satisfaction%20Analysis.xlsx).
 1. Sheets: 'customer_feedback', 'delivery_performance', 'order_items', 'products' show cleaned tables corresponding to the original data.
 2. 'feedback_by_category' displays feedback text (a categorical variable) divided by sentiment and category. This analysis revealed an issue with feedback classification, as the same text appears in multiple categories, which is not logical. Based on the available data, it is unclear whether the problem stems from the text itself or the classification process. A category-focused approach was chosen for learning purposes. (answer to question 1)
 3. 'customer_exp_by_category' focuses on rating and feedback sentiment proportion changes by category offering interactive charts with timeline to examine trends in time. (answer to question 2)
 4. 'customer_exp_by_delivery_time' investigates ratings and feedback sentiment in category 'Delivery' depending on the difference between promised and actual delivery time. (answer to question 3)
-5. 'customer_exp_by_product' identifies products with the lowest ratings in 'Product Quality' category and provides an interactive chart to compare problematic products with similar ones from other brands. Both rating and price are included to help find a better-quality product at a similar price.  
+5. 'customer_exp_by_product' identifies products with the lowest ratings in 'Product Quality' category and provides an interactive chart to compare problematic products with similar ones from other brands. Both rating and price are included to help find a better-quality product at a similar price.(answer to question 4)  
 
 ### Conclusions
 All categories have similar ratings and feedback sentiment proportions. In the case of 'App Experience' and 'Customer Service,' the examined parameters slightly improved over time, while 'Delivery' and 'Product Quality' ratings gradually declined. However, these changes do not appear significant enough to raise concern.
